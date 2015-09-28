@@ -1,0 +1,43 @@
+{
+    "listings": [
+        {
+            "title": "Test Title No.1",
+            "owner": "Test owner No.1",
+            "body": "Test body No.1",
+            "timestamp": "2015-9-28",
+            "category": "0"
+        },
+        {
+            "title": "Test Title No.2",
+            "owner": "Test owner No.2",
+            "body": "Test body No.2",
+            "timestamp": "2015-9-29",
+            "category": "0"
+        },
+        {
+            "title": "Laundry by Uber",
+            "owner": "Uber",
+            "body": "We do laundry.",
+            "timestamp": "2015-9-29",
+            "category": "1"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Groceries",
+            "secret": "Bananas are spoiled",
+            "listings": {
+                "0": true,
+                "1": true
+            }
+        },
+        {
+            "name": "Laundry",
+            "secret": "Soap is made from hospital disposal bins",
+            "listings": {
+                "2": true
+            }
+        }
+
+    ]
+}
