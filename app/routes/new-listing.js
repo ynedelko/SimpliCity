@@ -6,6 +6,13 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    //save new listing
+    addListing(params) {
+      var newListing = this.store.createRecord('listing', params);
+      newListing.save();
+      debugger;
+
+
+      this.transitionTo('index');
+    }
   }
 });

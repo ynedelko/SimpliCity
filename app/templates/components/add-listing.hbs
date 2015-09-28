@@ -13,12 +13,15 @@
   </div>
   <div class="form-group">
     <label for="category">Listing Category</label>
-    <select>
+    <select id="category">
       {{#each model as |category|}}
-        <option>{{category.name}}</option>
+        <option value={{category.id}}>{{category.name}}</option>
       {{/each}}
     </select>
   </div>
+
+  <!-- {{input type='hidden' value=current-date}} -->
+
   <button class="btn btn-primary" {{action "addListing"}}>Add Listing</button>
 </form>
 
